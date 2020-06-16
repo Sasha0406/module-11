@@ -1,0 +1,49 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid $color-footer-border;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.footer p,
+.footer a {
+  color: $color-title;
+}
+.footer a {
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: linear;
+  &:hover {
+    color: $color-footer-link-hover;
+  }
+}
+
+.contact-form {
+  display: flex;
+  &__input {
+    width: 230px;
+    border: 1px solid $color-footer-form-border;
+  }
+  &__btn {
+    width: 150px;
+    height: 40px;
+    font-size: 14px;
+    color: $color-contact-form;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: $color-background-contact-form;
+    border-style: none;
+  }
+}
+input::placeholder {
+  font-family: $font-secondary;
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: italic;
+  color: $color-foter-placeholder;
+  background-color: $color-background-placeholder;
+  padding-left: 12px;
+}
